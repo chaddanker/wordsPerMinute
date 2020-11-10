@@ -1,0 +1,43 @@
+.WordsPerMinute {
+    text-align: center;
+    .Display {
+        width: 100% !important;
+        height: 80vh !important;
+        background-color: rgb(231, 231, 231)!important;
+        .timer {
+            font-size: 7em;
+        }
+        div {
+            padding-top: 15%;
+        }
+    }
+
+    .TypeInput {
+        div {
+            box-shadow: 0 0 19px 5px #fafafafa;
+            padding-top: 2%;
+            input {
+                width: 100%;
+                text-align: center;
+                border: none;
+                font-size: 4em;
+                color: #00000040;
+                caret-color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .remaining {
+                font-size: 4em;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #ffffff;
+                top: -42px;
+                right: -43.2%;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+    }
+
+}
