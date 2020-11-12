@@ -1,5 +1,27 @@
-.app-input-left {
-    min-width: 100%;
-    text-align: right;
-    white-space: nowrap;
+.TypeInput {
+    box-shadow: 0 0 5px 5px #fafafa;
+    background-color: #fafafa;
+    div {
+        padding-top: 2%;
+        input {
+            width: 100%;
+            text-align: center;
+            border: none;
+            font-size: 4em;
+            font-family: monospace;
+            color: #00000040;
+            caret-color: black;
+            padding-right: 5px;
+        }
+
+        .remaining {
+            font-size: 4em;
+            top: -44px;
+            overflow: hidden;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
 }

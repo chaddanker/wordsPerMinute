@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 import Display from './Display';
 import TypeInput from './TypeInput';
 
+import testString from '../../services/faker';
+
 import './WordsPerMinute.scss';
 
-const tester = "generate a string of 100 random words here";
+const tester = String(testString).replaceAll(',', ' ').toLowerCase();
 
 const WordsPerMinute = () => {
 
@@ -17,7 +19,7 @@ const WordsPerMinute = () => {
     const [accuracy, setAccuracy] = useState(100);
 
     useEffect(() => {
-        setAccuracy((mistakes/wordCount)*100);
+        setAccuracy(((mistakes/characterCount)*100));
     }, [mistakes, wordCount]);
 
     return (
