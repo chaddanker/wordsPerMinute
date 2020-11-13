@@ -3,7 +3,6 @@ A word counting application, built with React. I saw this app online and decided
 
 To do:
 
-- keep cursor in center
 - app must work on any size window resizable (only full screen works)
 - stop user from typing more when timer ends
 - better UI design
